@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Junior GK Questions</title>
+</head>
+<body>
+    <h1>Top GK Questions for Juniors</h1>
+    <ul>
+        {% for q in questions %}
+            <li>{{ q }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+from flask import Flask, render_template
+app = Flask(_name_)
+questions =[
+    # General Knowledge Quiz
+
+questions = [# Tough General Knowledge Quiz - Part 1 
+
+questions += [
+    {"question": "Which Nobel Prize category was added most recently?", "options": ["Peace", "Economics", "Literature", "Chemistry"], "answer": "Economics"},
+    {"question": "Which country has the most volcanoes?", "options": ["Indonesia", "Japan", "USA", "Philippines"], "answer": "Indonesia"},
+    {"question": "Who was the first person to reach the South Pole?", "options": ["Robert Scott", "Roald Amundsen", "Ernest Shackleton", "James Cook"], "answer": "Roald Amundsen"},
+    {"question": "Which is the smallest bone in the human body?", "options": ["Stapes", "Femur", "Ulna", "Tibia"], "answer": "Stapes"},
+    {"question": "Which country has the oldest continuously operating parliament?", "options": ["UK", "Iceland", "Sweden", "France"], "answer": "Iceland"},
+    {"question": "Which gas is most abundant in Earth's atmosphere?", "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], "answer": "Nitrogen"},
+    {"question": "What is the name of the deepest known point in Earth's oceans?", "options": ["Mariana Trench", "Tonga Trench", "Java Trench", "Puerto Rico Trench"], "answer": "Mariana Trench"},
+    {"question": "Which ancient city was buried by Mount Vesuvius?", "options": ["Pompeii", "Athens", "Carthage", "Rome"], "answer": "Pompeii"},
+    {"question": "Which scientist is known for the laws of planetary motion?", "options": ["Galileo", "Kepler", "Newton", "Copernicus"], "answer": "Kepler"},
+    {"question": "Which country is the largest producer of coffee?", "options": ["Colombia", "Vietnam", "Brazil", "Ethiopia"], "answer": "Brazil"},
+    {"question": "Which African country has never been colonized?", "options": ["Nigeria", "Ethiopia", "Kenya", "Ghana"], "answer": "Ethiopia"},
+    {"question": "Which metal is liquid at room temperature?", "options": ["Mercury", "Lead", "Zinc", "Copper"], "answer": "Mercury"},
+    {"question": "Which is the longest bone in the human body?", "options": ["Femur", "Humerus", "Tibia", "Fibula"], "answer": "Femur"},
+    {"question": "Which country hosted the first modern Olympic Games?", "options": ["France", "USA", "Greece", "UK"], "answer": "Greece"},
+    {"question": "Which planet rotates in the opposite direction to most others?", "options": ["Venus", "Mars", "Jupiter", "Neptune"], "answer": "Venus"}
+]# Tough General Knowledge Quiz - Part 2
+
+questions += [
+    {"question": "Which country was formerly known as Abyssinia?", "options": ["Ethiopia", "Sudan", "Somalia", "Egypt"], "answer": "Ethiopia"},
+    {"question": "What is the name of the first artificial Earth satellite?", "options": ["Sputnik 1", "Explorer 1", "Aryabhata", "Voyager 1"], "answer": "Sputnik 1"},
+    {"question": "Which scientist coined the term 'cell'?", "options": ["Robert Hooke", "Antonie van Leeuwenhoek", "Charles Darwin", "Gregor Mendel"], "answer": "Robert Hooke"},
+    {"question": "Which country has the most pyramids in the world?", "options": ["Egypt", "Mexico", "Sudan", "Peru"], "answer": "Sudan"},
+    {"question": "Which is the only mammal capable of true flight?", "options": ["Flying squirrel", "Bat", "Sugar glider", "Lemur"], "answer": "Bat"},
+    {"question": "Which European city is divided by canals and known as the 'City of Bridges'?", "options": ["Venice", "Amsterdam", "Bruges", "Stockholm"], "answer": "Venice"},
+    {"question": "Which country is home to the ancient city of Petra?", "options": ["Jordan", "Israel", "Lebanon", "Syria"], "answer": "Jordan"},
+    {"question": "Which vitamin is produced when the human skin is exposed to sunlight?", "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"], "answer": "Vitamin D"},
+    {"question": "Which is the largest internal organ in the human body?", "options": ["Liver", "Heart", "Lungs", "Kidneys"], "answer": "Liver"},
+    {"question": "Which country has the oldest known written language?", "options": ["China", "Egypt", "Sumer (Iraq)", "India"], "answer": "Sumer (Iraq)"},
+    {"question": "Which is the only continent without reptiles?", "options": ["Antarctica", "Europe", "Australia", "North America"], "answer": "Antarctica"},
+    {"question": "Which ancient wonder was located in Babylon?", "options": ["Hanging Gardens", "Great Pyramid", "Statue of Zeus", "Temple of Artemis"], "answer": "Hanging Gardens"},
+    {"question": "Which gas is used in fluorescent lights?", "options": ["Neon", "Argon", "Mercury vapor", "Helium"], "answer": "Mercury vapor"},
+    {"question": "Which country has the most UNESCO World Heritage Sites?", "options": ["Italy", "China", "India", "France"], "answer": "Italy"},
+    {"question": "Which is the most spoken native language in the world?", "options": ["English", "Hindi", "Mandarin Chinese", "Spanish"], "answer": "Mandarin Chinese"}
+]# Tough General Knowledge Quiz - Part 3
+
+questions = [
+    {"question": "Which country has the highest number of official languages?", "options": ["India", "South Africa", "Switzerland", "Belgium"], "answer": "South Africa"},
+    {"question": "Who was the first female Prime Minister in the world?", "options": ["Indira Gandhi", "Margaret Thatcher", "Sirimavo Bandaranaike", "Angela Merkel"], "answer": "Sirimavo Bandaranaike"},
+    {"question": "Which element has the highest melting point?", "options": ["Carbon", "Tungsten", "Iron", "Platinum"], "answer": "Tungsten"},
+    {"question": "Which ancient civilization built Machu Picchu?", "options": ["Aztec", "Maya", "Inca", "Olmec"], "answer": "Inca"},
+    {"question": "What is the longest river in Asia?", "options": ["Yangtze", "Ganges", "Mekong", "Yellow River"], "answer": "Yangtze"},
+    {"question": "Which scientist proposed the heliocentric theory?", "options": ["Galileo", "Copernicus", "Kepler", "Newton"], "answer": "Copernicus"},
+    {"question": "Which country is known as the Land of the Thunder Dragon?", "options": ["Nepal", "Bhutan", "Thailand", "Mongolia"], "answer": "Bhutan"},
+    {"question": "Which planet has the most moons?", "options": ["Saturn", "Jupiter", "Uranus", "Neptune"], "answer": "Saturn"},
+    {"question": "Who discovered penicillin?", "options": ["Alexander Fleming", "Louis Pasteur", "Edward Jenner", "Marie Curie"], "answer": "Alexander Fleming"},
+    {"question": "Which war ended with the Treaty of Versailles?", "options": ["World War I", "World War II", "Cold War", "Napoleonic Wars"], "answer": "World War I"},
+    {"question": "What is the capital of Kazakhstan?", "options": ["Astana", "Almaty", "Tashkent", "Bishkek"], "answer": "Astana"},
+    {"question": "Which country invented paper?", "options": ["India", "Egypt", "China", "Greece"], "answer": "China"},
+    {"question": "Which organ in the human body produces insulin?", "options": ["Liver", "Pancreas", "Kidney", "Gallbladder"], "answer": "Pancreas"},
+    {"question": "What is the SI unit of electric charge?", "options": ["Ampere", "Coulomb", "Volt", "Ohm"], "answer": "Coulomb"},
+    {"question": "Which desert is the largest in the world?", "options": ["Sahara", "Gobi", "Antarctic", "Kalahari"], "answer": "Antarctic"}
+]<!DOCTYPE html>
+<html>
+<head>
+  <title>GK Quiz</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+    .question { margin-bottom: 20px; }
+    button { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>General Knowledge Quiz</h1>
+  <div id="quiz"></div>
+  <button onclick="submitQuiz()">Submit</button>
+  <p id="result"></p>
+
+  <script>
+    const questions = [
+      {
+        question: "Which country has the highest number of official languages?",
+        options: ["India", "South Africa", "Switzerland", "Belgium"],
+        answer: "South Africa"
+      },
+      {
+        question: "Who was the first female Prime Minister in the world?",
+        options: ["Indira Gandhi", "Margaret Thatcher", "Sirimavo Bandaranaike", "Angela Merkel"],
+        answer: "Sirimavo Bandaranaike"
+      }
+      // Add more questions here...
+    ];
+
+    const quizDiv = document.getElementById("quiz");
+
+    questions.forEach((q, index) => {
+      const div = document.createElement("div");
+      div.className = "question";
+      div.innerHTML = `<strong>${index + 1}. ${q.question}</strong><br>` +
+        q.options.map(opt => `<label><input type="radio" name="q${index}" value="${opt}"> ${opt}</label><br>`).join("");
+      quizDiv.appendChild(div);
+    });
+
+    function submitQuiz() {
+      let score = 0;
+      questions.forEach((q, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selected && selected.value === q.answer) {
+          score++;
+        }
+      });
+      document.getElementById("result").innerText = `You scored ${score} out of ${questions.length}`;
+    }
+  </script>
+</body>
+</html>body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  color: #00796b;
+}
+
+.question {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+
+
+
+
+
+    
+
+
+    
+ 
